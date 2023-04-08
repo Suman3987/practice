@@ -27,11 +27,19 @@ console.log(animal);
 
 // console.log(animal);
 
-let data = [2,4,5,10];
+// let data = [2,4,5,10];
 
- let x = (item) => {
-    return 10 * item
+//  let x = (item) => {
+//     return 10 * item
+// }
+//     let result = data.map(x)
+
+//  console.log(result);
+
+let myName = ()=>{
+    return "Hello";
 }
-    let result = data.map(x)
-
- console.log(result);
+let greeting = (sayHi ,name)=> {
+    console.log(sayHi() + " " + name)
+}
+greeting(myName, "ThapaTechnical");
