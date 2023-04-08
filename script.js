@@ -9,11 +9,14 @@ const animals = [
     {name : "Jimmy" , species: "fish"},
 ]
 
-let dogs= animals.filter(function(animal){
-    return animal.species === "dog";
+// 
+let animal=[]
+for (let i = 0; i < animals.length; i++)
+ if (animals[i].species === "dog")
+ animal.push(animals[i])
 
-})
-console.log(dogs);
+console.log(animal);
+
 
 // let animal=[];
 
@@ -23,3 +26,12 @@ console.log(dogs);
 // }
 
 // console.log(animal);
+
+let data = [2,4,5,10];
+
+ let x = (item) => {
+    return 10 * item
+}
+    let result = data.map(x)
+
+ console.log(result);
