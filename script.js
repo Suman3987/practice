@@ -78,5 +78,32 @@ const interviewQuestions = (name) => {
 // const candidates1 = interviewQuestions("Thapa");
 // candidates1("React")
 
-interviewQuestions("vinod")("UI");
-interviewQuestions("Thapa")("React");
+// interviewQuestions("vinod")("UI");
+// interviewQuestions("Thapa")("React");
+
+
+// Higher Order Function
+
+const interviewQuestions1 = (name) => {
+   
+        if(name ==="vinod"){
+            return function (topic){
+            console.log(`Hi, ${name}. what is ${topic}? Please explain us.`);
+        }
+    }else if(name ==="Thapa"){
+            return function (topic){
+            console.log(`Hi, ${name}. what is ${topic}? Please explain us.`);
+        }
+    }else if(name ==="Thapatechnical"){
+            return function (topic){
+            console.log(`Hi, ${name}. what is ${topic}? Please explain us.`);
+        }
+    }else {
+            return function(){
+            console.log("Welcome to TT Company");}
+        }
+    }
+
+
+interviewQuestions1("vinod")("UI");
+interviewQuestions1("Thapa")("React");
